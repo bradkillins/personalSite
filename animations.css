@@ -1,0 +1,146 @@
+.animations {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.animationContainer {
+  text-align: center;
+  margin: 5px;
+}
+
+.animationTitle {
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  transform: translateY(-40px);
+}
+
+/* --Loading Bars-- */
+
+.loading {
+  background-color: cornflowerblue;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.loading div {
+  background-color: white;
+  margin: auto 2px;
+  width: 8px;
+  height: 60px;
+
+  animation: barStretch 1.2s ease-in-out infinite;
+}
+
+.loading .bar2 {
+  animation-delay: 0.2s;
+}
+.loading .bar3 {
+  animation-delay: 0.4s;
+}
+.loading .bar4 {
+  animation-delay: 0.6s;
+}
+.loading .bar5 {
+  animation-delay: 0.8s;
+}
+.loading .bar6 {
+  animation-delay: 1s;
+}
+
+@keyframes barStretch {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* --Expanding Circles-- */
+
+.expand {
+  background-color: mediumaquamarine;
+  width: 250px;
+  height: 250px;
+}
+
+.cirCon {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.cir {
+  position: absolute;
+  border-radius: 50%;
+
+  animation: expandCircle 2s ease-in-out infinite;
+}
+.circle0 {
+  background-color: purple;
+  width: 25px;
+  height: 25px;
+  z-index: 7;
+  top: 112.5px;
+  left: 112.5px;
+}
+.circle1 {
+  background-color: mediumblue;
+  width: 50px;
+  height: 50px;
+  z-index: 6;
+  top: 100px;
+  left: 100px;
+}
+.circle2 {
+  background-color: green;
+  width: 75px;
+  height: 75px;
+  z-index: 5;
+  top: 87.5px;
+  left: 87.5px;
+}
+.circle3 {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+  top: 75px;
+  left: 75px;
+}
+.circle4 {
+  background-color: orange;
+  width: 125px;
+  height: 125px;
+  z-index: 3;
+  top: 62.5px;
+  left: 62.5px;
+}
+.circle5 {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+  top: 50px;
+  left: 50px;
+}
+
+@keyframes expandCircle {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
