@@ -177,11 +177,11 @@ header {
 
 .cardTitle {
   margin-top: 1.5em;
-  color: var(--mainDarkColor);
 }
 
 .card a {
   text-decoration: none;
+  color: var(--mainDarkColor);
 }
 
 .card p {
