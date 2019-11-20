@@ -1,12 +1,13 @@
 /* 
-
 Inspiration for the navigation menu from Dev Ed:
 https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
 
 Inspiration for CSS Animations from https://codepen.io/
 
-Main resources used: https://developer.mozilla.org/en-US/
-                     https://www.w3schools.com/
+Main resources used: 
+  https://developer.mozilla.org/en-US/
+  https://www.w3schools.com/
+
 */
 
 /* --Custom Properties-- */
@@ -132,7 +133,7 @@ header {
   align-content: center;
   margin-top: 10vh;
   /*-- url("/assets/star-mountains-unsplash.jpg") --*/
-  background-image: url("/personalSite/assets/star-mountains-unsplash.jpg");
+  background-image: url("assets/star-mountains-unsplash.jpg");
   background-size: cover;
   background-position-y: bottom;
   height: 90vh;
