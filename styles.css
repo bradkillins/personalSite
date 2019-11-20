@@ -15,7 +15,7 @@ Main resources used:
 :root {
   --mainDarkColor: rgb(70, 80, 120);
   --mainLightColor: rgb(240, 240, 255);
-  --cardColor: rgb(230, 230, 245);
+  --cardHoverColor: rgb(230, 230, 245);
   --mainFont: "Open Sans", sans-serif;
   --accentFont: "Raleway", sans-serif;
 }
@@ -192,8 +192,17 @@ header {
   min-width: 360px;
 }
 
+/* --Blog-- */
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
 .postContainer {
-  background-color: rgb(240, 240, 255);
+  background-color: var(--mainLightColor);
+  margin: 1em 0;
 }
 
 .postHead {
@@ -210,6 +219,7 @@ header {
 
 .postDate {
   margin: auto 0;
+  padding: 0.5em;
 }
 
 .postBody {
@@ -221,7 +231,6 @@ header {
 .cardContainer {
   margin-top: 1em;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -238,7 +247,7 @@ header {
 }
 
 .card:hover {
-  background-color: var(--cardColor);
+  background-color: var(--cardHoverColor);
 }
 
 .cardIn {
@@ -260,19 +269,40 @@ header {
   margin: 1em 1.5em;
 }
 
+.icon {
+  width: 48px;
+}
+
+.github {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.github div {
+  margin: 0 1em;
+}
+
 /* --Footer Section-- */
 
 .footer {
   background-color: var(--mainDarkColor);
-  font-size: 0.8em;
+  font-size: 1rem;
   text-align: center;
-  vertical-align: middle;
+  color: var(--mainLightColor);
 }
 
-.footer h3 {
+.footer p {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: rgb(190, 190, 210);
+  text-decoration: none;
+}
+
+.footer a:hover {
   color: var(--mainLightColor);
-  line-height: 8vh;
-  font-weight: normal;
 }
 
 /* --Spacer sized to nav bar height-- */
