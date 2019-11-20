@@ -18,7 +18,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bradley Killins - CSS/HTML Cheat-sheet</title>
+    <title>Bradley Killins - CSS Cheat-sheet</title>
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Google Fonts -->
@@ -34,11 +34,11 @@
   <body>
     <header>
       <section class="head">
-        <div class="myName"><a href="/index.html#">Bradley Killins</a></div>
+        <div class="myName"><a href="index.html#">Bradley Killins</a></div>
         <nav class="proMenu">
           <ul>
             <li class="proLink">
-              <a href="/index.html#project">Back to Projects</a>
+              <a href="index.html#project">Back to Projects</a>
             </li>
           </ul>
         </nav>
@@ -47,8 +47,82 @@
     <main>
       <section class="content">
         <div class="spacer"></div>
-        <h1>CSS / HTML Cheat-sheet</h1>
-        <div class="cheat"></div>
+        <h1>CSS Cheat-sheet</h1>
+        <div class="colContainer">
+          <div class="col">
+            <h3>Selectors</h3>
+            <p>
+              <em>* { }</em> - all elements<br />
+              <em>div { }</em> - all div tags<br />
+              <em>div, p { }</em> - all divs and paragraphs<br />
+              <em>div p { }</em> - paragraphs inside divs<br />
+              <em>div > p { }</em> - all p tags, one level deep in div<br />
+              <em>div + p { }</em> - p tags immediately after div<br />
+              <em>div ~ p { }</em> - p tags preceded by div<br />
+              <em>.classname { }</em> - all elements with class<br />
+              <em>#idname { }</em> - element with ID<br />
+              <em>div.classname { }</em> - divs with certain classname<br />
+              <em>div#idname { }</em> - div with certain ID<br />
+              <em>#idname * { }</em> - all elements inside #idname
+            </p>
+            <h3>Linking</h3>
+            <p>
+              External stylesheet: <br />
+              &lt;link rel="stylesheet" href="styles.css" /&gt;<br />
+              Inline: <br />
+              Don't use inline styling! <br />
+              Internal: <br />
+              Use &lt;style&gt; tags in head.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Flex Box</h3>
+            <p>
+              <em>display: flex;</em> - Use flex layout.<br />
+              <em>flex-direction: row;</em> - Displays items horizontally.<br />
+              <em>flex-direction: column;</em> - Displays items vertically.<br />
+              <em>flex-wrap: wrap;</em> - Items can wrap to next row.<br />
+              <em>flex-wrap: nowrap;</em> - Items stays on a single row.<br />
+              <em>justify-content: center</em> - Align items in center of
+              row.<br />
+              <em>justify-content: space-around;</em> - Puts space around each
+              item in row.<br />
+              <em>align-content: center;</em> - Align items in center of
+              column.<br />
+              <em>align-content: space-between;</em> - Only space between
+              items.<br />
+            </p>
+            <h3>Transform</h3>
+            <p>
+              <em>translateX();</em> - moves item along x-axis.<br />
+              <em>translateY();</em> - moves item along y-axis.<br />
+              <em>scaleX();</em> - scales item along x-axis.<br />
+              <em>scaleY();</em> - scales item along y-axis.<br />
+              <em>rotate();</em> - rotates item - use deg as unit<br />
+            </p>
+            <h3>Media Queries</h3>
+            <p>
+              Conditionally apply styling: <br />
+              <em>@media screen and (max-width: 480px) { }</em><br />
+              This will apply styling only if viewport is 480px or less.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Helpful Links</h3>
+            <p>
+              <a href="https://www.w3schools.com/css/default.asp"
+                >W3 Schools - CSS</a
+              ><br />
+              <a href="https://devhints.io/css"
+                >Dev Hints - Beautiful CSS Cheat Sheet</a
+              ><br />
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+                >More on Media Queries from MDN</a
+              ><br />
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

@@ -1,12 +1,20 @@
-const menuToggle = function() {
-  const smallMenuIcon = document.querySelector(".smallMenu"); //get element with class "smallMenu"
-  const mobileMenu = document.querySelector(".menuLinks"); //get element with class "menuLinks"
+/* classToggle - Toggles a class on/off of a target element when a click 
+                 event occurs on a trigger element
+ * @Params - trigger: element selector that will trigger the toggle
+ *         - target: element selector of the target
+ *         - toggle: the class name to be toggled on/off of target
+ */
 
-  //detect when click event happens on element with class "smallMenu"
-  smallMenuIcon.addEventListener("click", function() {
-    //toggle adding/removing class "smallMenuOpen" to element with class "menuLinks"
-    mobileMenu.classList.toggle("smallMenuOpen");
+const classToggle = function(trigger, target, toggles) {
+  const triggerClass = document.querySelector(trigger); //get first element with selector equal to trigger
+  const targetClass = document.querySelector(target); //get first element with selector equal to target
+
+  //detect when click event happens on trigger
+  triggerClass.addEventListener("click", function() {
+    console.log(toggles);
+    //add/remove toggle class to target element
+    targetClass.classList.toggle(toggles);
   });
 };
 
-menuToggle();
+classToggle(".smallMenu", ".menuLinks", "smallMenuOpen");
