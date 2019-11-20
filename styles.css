@@ -155,6 +155,11 @@ header {
   font-family: var(--mainFont);
 }
 
+.content h2 {
+  margin: 1em 0;
+  font-size: 1.3em;
+}
+
 .content h3 {
   margin: 1em 0;
 }
