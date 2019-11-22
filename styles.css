@@ -2,15 +2,30 @@
 Inspiration for the navigation menu from Dev Ed:
 https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
 
+Specifically this video by Dev Ed:
+https://www.youtube.com/watch?v=gXkqy0b4M5g
+
 Inspiration for CSS Animations from https://codepen.io/
 
 Main resources used: 
   https://developer.mozilla.org/en-US/
   https://www.w3schools.com/
+  https://devhints.io/css
 
 */
 
-/* --Custom Properties-- */
+/* --Custom Properties-- 
+
+-----PLEASE TAKE NOTE-----
+CSS custom properties have not yet been included in 
+W3C Validator, therefore errors are generated that are
+not correct. My implementation of custom properties are 
+executed correctly, please ignore validation errors about 
+custom properties.
+
+See - https://github.com/w3c/css-validator/issues/111
+
+*/
 
 :root {
   --mainDarkColor: rgb(70, 80, 120);
@@ -164,11 +179,6 @@ header {
   margin: 1em 0;
 }
 
-.content h4 {
-  margin: 1em 0;
-  font-weight: normal;
-}
-
 .content h5 {
   margin: 1em 0;
   text-decoration: underline;
@@ -178,8 +188,9 @@ header {
 .content ul {
   margin-left: 2em;
 }
-/* Adds Padding for the fixed Nav Bar 
-  when the internal link is used  */
+
+/* Add Padding for the fixed Nav Bar 
+  when internal link is used  */
 #about:target {
   padding-top: 10.5vh;
 }
@@ -195,6 +206,60 @@ header {
 .col {
   width: 50%;
   min-width: 360px;
+}
+
+/* --Calculator-- */
+
+.calc {
+  margin: 1em 0;
+  background-color: var(--mainLightColor);
+  min-width: 200px;
+}
+
+.btn {
+  color: var(--mainLightColor);
+  background-color: var(--mainDarkColor);
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  height: 32px;
+  padding: 4px;
+  border: solid black 1px;
+  margin: 0.2em;
+}
+
+.resultDisplay {
+  color: var(--mainLightColor);
+  background-color: var(--mainDarkColor);
+  margin: 0.2em;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.result {
+  margin: auto 0;
+  padding: 0 2px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#value1,
+#value2 {
+  width: 35%;
+}
+
+.topCalc {
+  justify-content: space-evenly;
+}
+
+.operators {
+  display: flex;
+}
+
+#clear {
+  min-width: 50px;
+  margin: 0 auto;
 }
 
 /* --Blog-- */
@@ -328,7 +393,7 @@ header {
 @media screen and (max-width: 800px) {
   /* --Links from nav bar styled into a vertical list
      menu. By default menu is translated 100vh above
-     the screen.  -- */
+     the screen. -- */
   .menuLinks {
     position: absolute;
     top: 10vh;

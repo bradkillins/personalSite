@@ -33,7 +33,7 @@
   </head>
   <body>
     <header>
-      <section class="head">
+      <div class="head">
         <div class="myName"><a href="index.html#">Bradley Killins</a></div>
         <nav class="proMenu">
           <ul>
@@ -42,20 +42,51 @@
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
     <main>
       <section class="content">
         <div class="spacer"></div>
         <h1>Blog</h1>
-        <div class="blog">
+        <div class="blog" itemscope itemtype="http://schema.org/Blog">
           <!-- Blog Posts start here -->
-          <div class="postContainer">
+          <div
+            class="postContainer"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
             <div class="postHead">
-              <div class="postTitle">Practice, Practice, Practice!</div>
-              <div class="postDate">Nov 19, 2019</div>
+              <div class="postTitle" itemprop="headline">
+                Sleep is Important
+              </div>
+              <div class="postDate" itemprop="datePublished">Nov 20, 2019</div>
             </div>
-            <div class="postBody">
+            <div class="postBody" itemprop="text">
+              <p>
+                I now realize that its completely impossible to get quality work
+                done with less than 4 hours of sleep 3 days in a row. Watch out
+                as you will make dumb mistakes without that REM-goodness.
+              </p>
+              <p>
+                Be carful operating a vehicle in a sleep-deprived state! Be even
+                more carful when operating a code editor in such a state! ;)
+              </p>
+            </div>
+          </div>
+          <div
+            class="postContainer"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
+            <div class="postHead">
+              <div class="postTitle" itemprop="headline">
+                Practice, Practice, Practice!
+              </div>
+              <div class="postDate" itemprop="datePublished">Nov 19, 2019</div>
+            </div>
+            <div class="postBody" itemprop="text">
               <p>
                 Watching tutorials and following examples in class are great
                 ways to learn new concepts, but if you want that newly minted
@@ -77,12 +108,19 @@
               </p>
             </div>
           </div>
-          <div class="postContainer">
+          <div
+            class="postContainer"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
             <div class="postHead">
-              <div class="postTitle">CSS Media Queries are AWESOME!</div>
-              <div class="postDate">Nov 18, 2019</div>
+              <div class="postTitle" itemprop="headline">
+                CSS Media Queries are AWESOME
+              </div>
+              <div class="postDate" itemprop="datePublished">Nov 18, 2019</div>
             </div>
-            <div class="postBody">
+            <div class="postBody" itemprop="text">
               <p>
                 The first time I used media queries in CSS my mind was blown! If
                 you're unfamiliar, media queries allow you to conditionally
@@ -110,12 +148,19 @@
               </p>
             </div>
           </div>
-          <div class="postContainer">
+          <div
+            class="postContainer"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
             <div class="postHead">
-              <div class="postTitle">Wow, assignments pile up!</div>
-              <div class="postDate">Nov 17, 2019</div>
+              <div class="postTitle" itemprop="headline">
+                Wow, assignments pile up fast
+              </div>
+              <div class="postDate" itemprop="datePublished">Nov 17, 2019</div>
             </div>
-            <div class="postBody">
+            <div class="postBody" itemprop="text">
               <p>
                 I shouldn't be surprised, but I am. With just over three weeks
                 left of term life is crazy trying to keep up! I'm sure many
@@ -124,12 +169,17 @@
               </p>
             </div>
           </div>
-          <div class="postContainer">
+          <div
+            class="postContainer"
+            itemprop="blogPost"
+            itemscope
+            itemtype="https://schema.org/CreativeWork"
+          >
             <div class="postHead">
-              <div class="postTitle">First Post!</div>
-              <div class="postDate">Nov 17, 2019</div>
+              <div class="postTitle" itemprop="headline">First Post!</div>
+              <div class="postDate" itemprop="datePublished">Nov 17, 2019</div>
             </div>
-            <div class="postBody">
+            <div class="postBody" itemprop="text">
               <p>
                 This is my first post for my blog. How exciting!!! Come back
                 occasionally for posts about my life as a student at Bow Valley
@@ -141,7 +191,7 @@
       </section>
     </main>
     <footer>
-      <section class="footer">
+      <div class="footer">
         <p>
           Site designed and build by Bradley Killins<br />
           Icons made by
@@ -156,7 +206,7 @@
             >www.flaticon.com</a
           >
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

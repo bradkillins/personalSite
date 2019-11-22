@@ -11,7 +11,6 @@ const classToggle = function(trigger, target, toggles) {
 
   //detect when click event happens on trigger
   triggerClass.addEventListener("click", function() {
-    console.log(toggles);
     //add/remove toggle class to target element
     targetClass.classList.toggle(toggles);
   });
