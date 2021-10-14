@@ -1,25 +1,16 @@
 /* 
-Inspiration for the navigation menu from Dev Ed:
-https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
+Personal Site Assignment for SODV1102 - Introduction to Web Programming
+by Brad Killins
 
-Specifically this video by Dev Ed:
-https://www.youtube.com/watch?v=gXkqy0b4M5g
-
-Inspiration for CSS Animations from https://codepen.io/
-
-Main resources used: 
-  https://developer.mozilla.org/en-US/
-  https://www.w3schools.com/
-  https://devhints.io/css
-
+Due Nov 21, 2019
 */
 
 /* --Custom Properties-- 
 
 -----PLEASE TAKE NOTE-----
 CSS custom properties have not yet been included in 
-W3C Validator, therefore errors are generated that are
-not correct. My implementation of custom properties is 
+W3C Validator, therefore errors are generated. 
+My implementation of custom properties is 
 executed correctly, please ignore validation errors about 
 custom properties.
 
