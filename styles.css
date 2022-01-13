@@ -299,7 +299,7 @@ header {
 .card {
   width: 42%;
   min-width: 350px;
-  height: 160px;
+  height: fit-content;
   margin: 1em;
   box-shadow: 2px 2px 2px lightgrey;
   border: 1px solid lightgrey;
@@ -342,6 +342,10 @@ header {
 
 .github div {
   margin: 0 1em;
+}
+
+.tags {
+  font-weight: bold;
 }
 
 /* --Footer Section-- */
