@@ -154,7 +154,7 @@ header {
   text-align: center;
   font-size: 2em;
   color: var(--mainLightColor);
-  margin: auto 5vw;
+  margin: auto 10vw;
   font-family: var(--accentFont);
 }
 
