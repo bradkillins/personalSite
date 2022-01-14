@@ -385,11 +385,6 @@ header {
   .card {
     width: 80%;
   }
-
-  /* ---Splash Page Title--- */
-  .title {
-    font-size: 1.5em;
-  }
 }
 
 /* --CSS styles for viewport width <= 800px (Mobile)--*/
