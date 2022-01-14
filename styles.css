@@ -424,6 +424,10 @@ header {
   .splash {
     flex-direction: column-reverse;
   }
+
+  .myName {
+    font-size: 1.3em;
+  }
 }
 
 @media screen and (max-width: 550px) {
