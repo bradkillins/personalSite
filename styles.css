@@ -19,7 +19,7 @@ See - https://github.com/w3c/css-validator/issues/111
 */
 
 :root {
-  --mainDarkColor: rgb(70, 80, 120);
+  --mainDarkColor: rgb(70, 70, 70);
   --mainLightColor: rgb(240, 240, 255);
   --cardHoverColor: rgb(230, 230, 245);
   --mainFont: "Open Sans", sans-serif;
@@ -136,21 +136,25 @@ header {
 /* ---Splash Page--- */
 .splash {
   display: flex;
-  align-content: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
   margin-top: 10vh;
-  /*-- url("/assets/star-mountains-unsplash.jpg") --*/
-  background-image: url("assets/star-mountains-unsplash.jpg");
-  background-size: cover;
-  background-position-y: bottom;
+  background-color: #1a1a1a;
   height: 90vh;
+}
+
+.splash img {
+  margin: auto;
+  width: auto;
+  height: 80%;
 }
 
 /* ---Splash Page Title--- */
 .title {
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
   color: var(--mainLightColor);
-  margin: auto 20vw;
+  margin: auto 5vw;
   font-family: var(--accentFont);
 }
 
@@ -362,7 +366,7 @@ header {
 }
 
 .footer a {
-  color: rgb(190, 190, 210);
+  color: rgb(200, 200, 200);
   text-decoration: none;
 }
 
@@ -372,7 +376,7 @@ header {
 
 /* --Spacer sized to nav bar height-- */
 .spacer {
-  margin-top: 10.5vh;
+  margin-top: 10vh;
 }
 
 /* --CSS styles for viewport width <= 1027px (Tablet)--*/
@@ -380,6 +384,11 @@ header {
 @media screen and (max-width: 1027px) {
   .card {
     width: 80%;
+  }
+
+  /* ---Splash Page Title--- */
+  .title {
+    font-size: 1.5em;
   }
 }
 
@@ -396,7 +405,7 @@ header {
     height: 65vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(80, 92, 141);
+    background-color: var(--mainDarkColor);
     align-items: center;
     width: 55%;
     transform: translateY(-100vh);
@@ -415,8 +424,9 @@ header {
   .smallMenuOpen {
     transform: translateY(0);
   }
-  /* --Moves the splash page title further left on mobile-- */
-  .title {
-    margin: auto 10vw;
+
+  /* ---Splash Page--- */
+  .splash {
+    flex-direction: column-reverse;
   }
 }
